@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A1BB2DA41CD6982600E3C454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2DA31CD6982600E3C454 /* AppDelegate.swift */; };
-		A1BB2DA61CD6982600E3C454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2DA51CD6982600E3C454 /* ViewController.swift */; };
 		A1BB2DA91CD6982600E3C454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2DA71CD6982600E3C454 /* Main.storyboard */; };
 		A1BB2DAB1CD6982600E3C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2DAA1CD6982600E3C454 /* Assets.xcassets */; };
 		A1BB2DAE1CD6982600E3C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2DAC1CD6982600E3C454 /* LaunchScreen.storyboard */; };
 		A1BB2DB91CD6982600E3C454 /* answer_ballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2DB81CD6982600E3C454 /* answer_ballTests.swift */; };
 		A1BB2DC41CD6982600E3C454 /* answer_ballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2DC31CD6982600E3C454 /* answer_ballUITests.swift */; };
+		A1BB2DD21CD6B8DE00E3C454 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2DD11CD6B8DE00E3C454 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		A1BB2DA01CD6982600E3C454 /* answer_ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = answer_ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BB2DA31CD6982600E3C454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1BB2DA51CD6982600E3C454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1BB2DA81CD6982600E3C454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1BB2DAA1CD6982600E3C454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BB2DAD1CD6982600E3C454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		A1BB2DBF1CD6982600E3C454 /* answer_ballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = answer_ballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BB2DC31CD6982600E3C454 /* answer_ballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = answer_ballUITests.swift; sourceTree = "<group>"; };
 		A1BB2DC51CD6982600E3C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1BB2DD11CD6B8DE00E3C454 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,12 @@
 		A1BB2DA21CD6982600E3C454 /* answer_ball */ = {
 			isa = PBXGroup;
 			children = (
-				A1BB2DA31CD6982600E3C454 /* AppDelegate.swift */,
-				A1BB2DA51CD6982600E3C454 /* ViewController.swift */,
 				A1BB2DA71CD6982600E3C454 /* Main.storyboard */,
+				A1BB2DD11CD6B8DE00E3C454 /* MainVC.swift */,
 				A1BB2DAA1CD6982600E3C454 /* Assets.xcassets */,
 				A1BB2DAC1CD6982600E3C454 /* LaunchScreen.storyboard */,
 				A1BB2DAF1CD6982600E3C454 /* Info.plist */,
+				A1BB2DA31CD6982600E3C454 /* AppDelegate.swift */,
 			);
 			path = answer_ball;
 			sourceTree = "<group>";
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BB2DA61CD6982600E3C454 /* ViewController.swift in Sources */,
 				A1BB2DA41CD6982600E3C454 /* AppDelegate.swift in Sources */,
+				A1BB2DD21CD6B8DE00E3C454 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = answer_ball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.jilltankersley.answer-ball";
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = answer_ball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.jilltankersley.answer-ball";
