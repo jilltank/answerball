@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shake your phone to get the answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYX-bM-I8o">
-                                <rect key="frame" x="20" y="20" width="560" height="19.5"/>
+                                <rect key="frame" x="20" y="20" width="560" height="20"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="jev-u7-RrS">
@@ -31,12 +31,37 @@
                                     <constraint firstAttribute="width" constant="325" id="rnd-BX-cAT"/>
                                 </constraints>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-9p-xAH">
+                                <rect key="frame" x="172" y="213" width="257" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Inb-ue-UHx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="257" id="cZj-4Q-7E5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="173" id="oSn-O9-AaZ"/>
+                                    <constraint firstAttribute="width" constant="257" id="v4U-Qo-e7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obX-cK-ggL">
+                                <rect key="frame" x="197" y="498" width="146" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atC-Nu-v89">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                                        <state key="normal" title="tap to get the answer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1898120677519792" green="0.0" blue="0.54912467277486909" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="JYX-bM-I8o" secondAttribute="leading" id="2kQ-bu-cY5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JYX-bM-I8o" secondAttribute="trailing" id="5rn-C0-GiF"/>
                             <constraint firstItem="JYX-bM-I8o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="C61-GJ-lXU"/>
+                            <constraint firstItem="a7D-9p-xAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVs-kL-YOR"/>
+                            <constraint firstItem="a7D-9p-xAH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Omd-PG-gZZ"/>
                             <constraint firstItem="jev-u7-RrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gHD-Ky-zMq"/>
                             <constraint firstItem="jev-u7-RrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q4c-88-9sF"/>
                         </constraints>
