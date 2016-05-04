@@ -39,21 +39,16 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="173" id="oSn-O9-AaZ"/>
                                     <constraint firstAttribute="width" constant="257" id="v4U-Qo-e7h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obX-cK-ggL">
-                                <rect key="frame" x="197" y="498" width="146" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atC-Nu-v89">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
-                                        <state key="normal" title="tap to get the answer">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-dQ-wba">
+                                <rect key="frame" x="240" y="525" width="120" height="30"/>
+                                <state key="normal" title="tap to get answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1898120677519792" green="0.0" blue="0.54912467277486909" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -61,7 +56,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JYX-bM-I8o" secondAttribute="trailing" id="5rn-C0-GiF"/>
                             <constraint firstItem="JYX-bM-I8o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="C61-GJ-lXU"/>
                             <constraint firstItem="a7D-9p-xAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVs-kL-YOR"/>
+                            <constraint firstItem="kgq-dQ-wba" firstAttribute="centerX" secondItem="a7D-9p-xAH" secondAttribute="centerX" id="Jk3-6W-gug"/>
                             <constraint firstItem="a7D-9p-xAH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Omd-PG-gZZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kgq-dQ-wba" secondAttribute="bottom" constant="45" id="RpR-4T-PEK"/>
                             <constraint firstItem="jev-u7-RrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gHD-Ky-zMq"/>
                             <constraint firstItem="jev-u7-RrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q4c-88-9sF"/>
                         </constraints>
