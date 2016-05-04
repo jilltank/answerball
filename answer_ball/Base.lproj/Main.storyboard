@@ -31,7 +31,16 @@
                                     <constraint firstAttribute="width" constant="325" id="rnd-BX-cAT"/>
                                 </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-9p-xAH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-dQ-wba">
+                                <rect key="frame" x="240" y="525" width="120" height="30"/>
+                                <state key="normal" title="tap to get answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAnswerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A7P-IU-YfG"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-9p-xAH">
                                 <rect key="frame" x="172" y="213" width="257" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="Inb-ue-UHx"/>
@@ -43,12 +52,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-dQ-wba">
-                                <rect key="frame" x="240" y="525" width="120" height="30"/>
-                                <state key="normal" title="tap to get answer">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1898120677519792" green="0.0" blue="0.54912467277486909" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -63,6 +66,9 @@
                             <constraint firstItem="jev-u7-RrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q4c-88-9sF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerText" destination="a7D-9p-xAH" id="LmY-VD-xyR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
